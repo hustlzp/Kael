@@ -1,11 +1,12 @@
 # Kael
 
-[![Kael](https://static.wikia.nocookie.net/dota2_gamepedia/images/7/7d/Invoker_minimap_icon.png/revision/latest/scale-to-width-down/32?cb=20120717000939)]
+![Kael](https://static.wikia.nocookie.net/dota2_gamepedia/images/7/7d/Invoker_minimap_icon.png/revision/latest/scale-to-width-down/32?cb=20120717000939)
 
 > I am a beacon of knowledge blazing out across a black sea of ignorance.
+
 > from Carl, the Invoker
 
-Build UI with the power of Function Builder.
+Build UI like Kael with the power of Function Builder.
 
 [![CI Status](https://img.shields.io/travis/hustlzp/Kael.svg?style=flat)](https://travis-ci.org/hustlzp/Kael)
 [![Version](https://img.shields.io/cocoapods/v/Kael.svg?style=flat)](https://cocoapods.org/pods/Kael)
