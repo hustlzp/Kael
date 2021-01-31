@@ -26,6 +26,7 @@ Build UI with the power of Function Builder.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'hustlzp' => 'hustlzp@qq.com' }
   s.source           = { :git => 'https://github.com/hustlzp/Kael.git', :tag => s.version.to_s }
+  s.swift_version    = ['5.1', '5.2', '5.3']
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
