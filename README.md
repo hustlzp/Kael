@@ -2,8 +2,7 @@
 
 ![Kael](https://static.wikia.nocookie.net/dota2_gamepedia/images/7/7d/Invoker_minimap_icon.png/revision/latest/scale-to-width-down/32?cb=20120717000939)
 
-> I am a beacon of knowledge blazing out across a black sea of ignorance.
-
+> I am a beacon of knowledge blazing out across a black sea of ignorance.  
 > from Carl, the Invoker
 
 Build UI like Kael with the power of Function Builder.
