@@ -32,6 +32,7 @@ then define function to create `KaelTableViewSnapshot` like a Boss, example:
 private func createSnapshot() -> KaelTableViewSnapshot {
     typealias Section = KaelTableViewSection
     typealias SectionHeader = KaelTableViewSectionHeader
+    typealias SectionFooter = KaelTableViewSectionFooter
     typealias Row = KaelTableViewRow
 
     return KaelTableViewSnapshot {
@@ -53,8 +54,8 @@ private func createSnapshot() -> KaelTableViewSnapshot {
 
         Section {
             SectionHeader({ [weak self] in
-                return self?.createSectionHeader(title: "书架".localized())
-            }, Constant.SectionHeaderHeight)
+                return self?.createSectionHeader()
+            }, 40)
 
             Row({ [weak self] in
                 return self?.createCell()
@@ -80,8 +81,8 @@ private func createSnapshot() -> KaelTableViewSnapshot {
         if sectionConditionCheck() {
             Section {
                 SectionHeader({ [weak self] in
-                    return self?.createSectionHeader(title: "书架".localized())
-                }, Constant.SectionHeaderHeight)
+                    return self?.createSectionHeader()
+                }, 40)
 
                 Row({ [weak self] in
                     return self?.createCell()
