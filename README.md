@@ -1,4 +1,10 @@
 # Kael
+
+[![Kael](https://static.wikia.nocookie.net/dota2_gamepedia/images/7/7d/Invoker_minimap_icon.png/revision/latest/scale-to-width-down/32?cb=20120717000939)]
+
+> I am a beacon of knowledge blazing out across a black sea of ignorance.
+> from Carl, the Invoker
+
 Build UI with the power of Function Builder.
 
 [![CI Status](https://img.shields.io/travis/hustlzp/Kael.svg?style=flat)](https://travis-ci.org/hustlzp/Kael)
@@ -26,7 +32,7 @@ private lazy var dataSource: KaelTableViewDataSource = {
 }()
 ```
 
-then define function to create `KaelTableViewSnapshot` like a Boss, example:
+then build `KaelTableViewSnapshot` like Kael, example:
 
 ```swift
 private func createSnapshot() -> KaelTableViewSnapshot {
