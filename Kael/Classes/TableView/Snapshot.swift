@@ -13,12 +13,6 @@ public class KaelTableViewSnapshot {
     public init(_ sections: [KaelTableViewSection] = []) {
         self.sections = sections
     }
-    
-    public static func Snapshot(@KaelTableViewSectionsBuilder builder: () -> [KaelTableViewSection]) -> KaelTableViewSnapshot {
-        let snapshot = KaelTableViewSnapshot()
-        snapshot.sections = builder()
-        return snapshot
-    }
 
     public init(@KaelTableViewSectionsBuilder builder: () -> [KaelTableViewSection]) {
         self.sections = builder()
@@ -62,10 +56,12 @@ public class KaelTableViewSection {
     private(set) var footer: KaelTableViewSectionFooter?
     
     var isEmpty: Bool {
-        return rows.count == 0 && header == nil && footer == nil
+        return rows.count == 0
+            && header == nil
+            && footer == nil
     }
 
-    static let empty = KaelTableViewSection(rows: [], header: nil, footer: nil)
+    static let empty = KaelTableViewSection()
 
     public init(
         rows: [KaelTableViewRow] = [],
