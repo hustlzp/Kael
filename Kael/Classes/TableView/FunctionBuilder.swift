@@ -16,6 +16,10 @@ public struct KaelTableViewSectionsBuilder {
     public static func buildBlock(_ section: KaelTableViewSection) -> KaelTableViewSection {
         return section
     }
+    
+    public static func buildBlock(_ section: KaelTableViewSection) -> [KaelTableViewSection] {
+        return [section].filter({ !$0.isEmpty })
+    }
 
     public static func buildIf(_ value: KaelTableViewSection?) -> KaelTableViewSection {
         return value ?? KaelTableViewSection.empty
@@ -38,6 +42,10 @@ public struct KaelTableViewRowsBuilder {
     
     public static func buildBlock(_ element: KaelTableViewSectionElement) -> KaelTableViewSectionElement {
         return element
+    }
+    
+    public static func buildBlock(_ element: KaelTableViewSectionElement) -> [KaelTableViewSectionElement] {
+        return [element].filter({ !($0 is KaelTableViewSectionElementEmpty.Type) })
     }
 
     public static func buildIf(_ value: KaelTableViewSectionElement?) -> KaelTableViewSectionElement {
